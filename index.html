@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="./src/output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap"
+    rel="stylesheet">
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-areas:
+        "a a b c"
+        "d e e c";
+      gap: 40px;
+    }
+
+    .a {
+      grid-area: a;
+    }
+
+    .b {
+      grid-area: b;
+    }
+
+    .c {
+      grid-area: c;
+    }
+
+    .d {
+      grid-area: d;
+    }
+
+    .e {
+      grid-area: e;
+    }
+
+    @media (max-width: 1024px) {
+      .grid {
+        display: grid;
+        grid-template-areas:
+          "a"
+          "b"
+          "d"
+          "e"
+          "c";
+        gap: 40px;
+      }
+      img{
+          max-width: 100%;
+        }
+    }
+
+  </style>
+</head>
+
+<body class="m-0 box-border flex items-center justify-center min-h-screen bg-l-g-blue text-[14px] font-Barlow ">
+  <main class="grid px-48 py-16 drop-shadow">
+    <section
+      class="a border border-solid border-transparent bg-mod-violet px-8 py-7 rounded-lg bg-no-repeat bg-right-top"
+      style="background-image: url('./images/bg-pattern-quotation.svg')">
+      <header class="flex ">
+        <img class="border border-white rounded-full mr-6 " width="50px" height="50px" src="./images/image-daniel.jpg"
+          alt="Daniel">
+        <div class="flex flex-col items-start pt-1">
+          <p class="text-white">Daniel Clifford</p>
+          <p class="text-white opacity-[50%]">Verified Graduate</p>
+        </div>
+      </header>
+
+      <h1 class="text-white font-[600] text-xl py-4">I received a job offer mid-course, and the subjects I learned were
+        current, if not more so,
+        in the company I joined. I honestly feel I got every penny’s worth.</h1>
+
+      <p class="text-white opacity-[70%]">“ I was an EMT for many years before I joined the bootcamp. I’ve been looking
+        to make a
+        transition and have heard some people who had an amazing experience here. I signed up
+        for the free intro course and found it incredibly fun! I enrolled shortly thereafter.
+        The next 12 weeks was the best - and most grueling - time of my life. Since completing
+        the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”</p>
+    </section>
+
+    <section class="b border border-transparent bg-v-d-gray rounded-xl px-8 py-7">
+      <header class="flex">
+        <img class="border border-white rounded-full mr-6 " width="50px" height="50px" src="./images/image-jonathan.jpg"
+          alt="Jonathan">
+        <div class="flex flex-col items-start pt-1">
+          <p class="text-white">Jonathan Walters</p>
+          <p class="text-white opacity-[50%]">Verified Graduate</p>
+        </div>
+      </header>
+
+      <h1 class="text-white font-[600] text-xl py-4">The team was very supportive and kept me motivated</h1>
+
+      <p class="text-white opacity-[70%]">“ I started as a total newbie with virtually no coding skills. I now work as a
+        mobile engineer
+        for a big company. This was one of the best investments I’ve made in myself. ”</p>
+    </section>
+
+    <section class="d border border-transparent bg-white rounded-xl px-8 py-7">
+      <header class="flex">
+        <img class="border border-white rounded-full mr-6 " width="50px" height="50px" src="./images/image-jeanette.jpg"
+          alt="Jeanette">
+        <div class="flex flex-col items-start pt-1">
+          <p class="text-v-d-black">Jeanette Harmon</p>
+          <p class="text-v-d-black opacity-[70%]">Verified Graduate</p>
+        </div>
+      </header>
+      <h1 class="text-v-d-black font-[600] text-xl py-4">An overall wonderful and rewarding experience</h1>
+
+      <p class="text-v-d-black opacity-[70%]">“ Thank you for the wonderful experience! I now have a job I really enjoy,
+        and make a good living
+        while doing something I love. ”</p>
+
+    </section>
+
+    <section class="e border border-transparent bg-v-d-black rounded-xl px-8 py-7">
+      <header class="flex">
+        <img class="border border-white rounded-full mr-6 " width="50px" height="50px" src="./images/image-patrick.jpg"
+          alt="Patrick">
+        <div class="flex flex-col items-start pt-1">
+          <p class="text-white">Patrick Abrams</p>
+          <p class="text-white opacity-[70%]">Verified Graduate</p>
+        </div>
+      </header>
+      <h1 class="text-white font-[600] text-xl py-4">Awesome teaching support from TAs who did the bootcamp themselves.
+        Getting guidance from them and
+        learning from their experiences was easy.</h1>
+
+      <p class="text-white opacity-[70%]">“ The staff seem genuinely concerned about my progress which I find really
+        refreshing. The program
+        gave me the confidence necessary to be able to go out in the world and present myself as a capable
+        junior developer. The standard is above the rest. You will get the personal attention you need from
+        an incredible community of smart and amazing people. ”</p>
+    </section>
+
+    <section class="c border border-transparent bg-white rounded-xl px-8 py-7">
+      <header class="flex">
+        <img class="border border-transparent rounded-full mr-6" width="50px" height="50px"
+          src="./images/image-kira.jpg" alt="Kira">
+        <div class="flex flex-col items-start pt-1">
+          <p class="text-v-d-black">Kira Whittle</p>
+          <p class="text-v-d-black opacity-[70%]">Verified Graduate</p>
+        </div>
+      </header>
+
+      <h1 class="text-v-d-black font-[600] text-xl py-4"> Such a life-changing experience. Highly recommended!</h1>
+
+      <p class="text-v-d-black opacity-[70%]">“ Before joining the bootcamp, I’ve never written a line of code. I needed
+        some structure from
+        professionals who can help me learn programming step by step. I was encouraged to enroll by a former
+        student of theirs who can only say wonderful things about the program. The entire curriculum and staff
+        did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team
+        project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial
+        could ever have. In fact, I’ve often referred to it during interviews as an example of my developent
+        experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers.
+        100% recommend! ”</p>
+    </section>
+
+  </main>
+  <!--<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+
+</html>
